@@ -1,10 +1,19 @@
-# Time Traveler
+# Time Traveeler
 
-Want to improve your GitHub vanity metrics ?
-Run 
-It will create a commit for every day for the last 360 days.
+From this
 
-## Commits for the last 360
+![image](https://github.com/jmfayard/timetraveler/assets/459464/847fdaa0-59d6-4d48-82fe-bd6093909137)
+
+to this
+
+
+![image](https://github.com/jmfayard/timetraveler/assets/459464/7524ec9b-88f2-4715-8086-f6e7dbe1c6d7)
+
+FAST 
+
+## 👉🏻  [How to improve your GitHub Vanity Metrics Fast](https://dev.to/jmfayard/how-to-improve-your-github-vanity-metrics-fast-1p45)
+
+Commits for the last 360 days
 
 - Added fake commit Fake commited 360 days ago
 - Added fake commit Fake commited 359 days ago
