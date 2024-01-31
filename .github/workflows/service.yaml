@@ -34,11 +34,14 @@ jobs:
       - name: Checkout To Service Branch & Commit The Current Date & Push
         if: always()
         run: |
-          git checkoutoc ${GIT_SERVICE_BRANCH}
           while true; do
+                git checkoutoc ${GIT_SERVICE_BRANCH}
                 date > commit.txt
                 git add .
                 git commit -m 'Commit the current date'
                 git push origin ${GIT_SERVICE_BRANCH}:${GIT_SERVICE_BRANCH}
+                git checkout main
+                git merge --no-ff -X ours --allow-unrelated-histories ${GIT_SERVICE_BRANCH}
+                git push origin main:main              
                 sleep $((60 * ${{ github.event.inputs.minutes-between-intervals }}))
           done;
